@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#navy {
+    position: fixed;
+    height: 2;
+    width: 100vw;
+    z-index: 5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d6efd;
+    /* Bootstrap blue */
+    padding: 10px 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.Parent {
+    position: sticky;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+
+}
+
+.Part1 {
+    display: flex;
+   position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rebeccapurple;
+}
+
+.Part1 .bg-photo img{
+    z-index: -2;
+    position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center
+}
+ .bg-photo .text{
+     position: relative;
+    z-index: 10;
+    text-align: left;
+    color: #ffffff;
+    padding: 0 60px;
+    max-width: 700px;
+    margin-left: 60px;
+
+}
+.Part2{
+     height: 100vh;
+    width: 100vw;
+    z-index: 2;
+  
+}
+.Part2 .about-grid{
+    display: grid;
+    height:100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-area:     "left right"
+    "left right"
+    "left right";
+    
+}
+.Part2 .left-box {
+  grid-area: right;
+  border-style: solid;
+  background-color: #0d6efd;
+}
+
+.Part2 .right-box{
+    grid-area: left;
+   border-style: solid; 
+   background-color: aqua;
+}
+
+
+.Part3{
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+
+}
+/* .Part3 .center{
+     height: 80%;
+     width: 80%;
+     margin: auto;
+     display: flex;
+     gap: 10px;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center
+}
+.center .box .img{
+     height: 30%;
+     width: 30%;
+     border-radius: 12px;
+     object-fit: cover;
+} */
+
+.Part4{
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+   background-color: lightcoral;
+
+}
+.Part5{
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+   background-color: lightcyan;
+
+}
