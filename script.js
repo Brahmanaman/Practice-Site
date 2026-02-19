@@ -11,7 +11,7 @@ var btn = document.getElementById("myButton");
   {
     "team_name": "Mumbai Indians",
     "captain": "Hardik Pandya",
-    "team_color": " #0000FF;",
+    "team_color": "#0000FF",
     "cups_won": 5
   },
   {
@@ -40,10 +40,8 @@ var btn = document.getElementById("myButton");
     check.style.fontSize = "45px";
 
 
-    check.innerHTML = `
-    <p>${randomQuote.team_name} ${<span> </span>}   </p> -> 
-    <p>Captain: ${randomQuote.captain}</p>
-
-    <p>Cups Won: ${randomQuote.cups_won }</p>`;
+    check.innerHTML = `<p>${randomQuote.team_name}</p>
+                        <p>Captain: ${randomQuote.captain}</p>
+                        <p>Cups Won: ${randomQuote.cups_won }</p>`;
     
  } )
